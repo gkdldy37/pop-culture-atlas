@@ -1,7 +1,319 @@
-<h1>Pop Culture Atlas</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-POP 소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Segoe UI"', '"Apple SD Gothic Neo"', '"Malgun Gothic"', 'sans-serif'],
+          },
+          boxShadow: {
+            glow: '0 20px 80px rgba(56, 189, 248, 0.18)',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100 font-sans">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.25),_transparent_28%),radial-gradient(circle_at_top_right,_rgba(99,102,241,0.2),_transparent_24%),radial-gradient(circle_at_bottom_center,_rgba(14,165,233,0.14),_transparent_30%),linear-gradient(135deg,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(160deg,#020617,#0f172a)] bg-[length:auto_auto,auto_auto,auto_auto,44px_44px,auto]"></div>
 
-<h2>이것이 HTML 이다</h2>
+  <main class="mx-auto w-[min(1120px,calc(100%-24px))] py-5 sm:py-7">
+    <header class="mb-6 flex flex-col gap-4 rounded-[2rem] border border-sky-300/20 bg-slate-900/80 px-5 py-4 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex items-center gap-3">
+        <div class="relative grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-sky-400 via-cyan-300 to-indigo-400 shadow-lg shadow-sky-500/20">
+          <div class="absolute inset-2 rounded-xl border border-white/70 rotate-12"></div>
+          <span class="relative text-lg font-black">K</span>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold tracking-[0.35em] text-sky-200/80">K-POP INTRO</p>
+          <p class="text-sm text-slate-300">세련된 무대와 글로벌 문화</p>
+        </div>
+      </div>
 
-<h3>이것이 웹 서버를 통한 웹 호스팅이다</h3>
+      <nav class="flex flex-wrap items-center gap-2">
+        <a href="index.html" class="rounded-full border border-sky-300/15 bg-sky-400/10 px-4 py-2 text-sm text-slate-100 transition hover:-translate-y-0.5 hover:border-sky-300/35 hover:bg-sky-400/20">K-POP</a>
+        <a href="us-pop.html" class="rounded-full border border-sky-300/15 bg-sky-400/10 px-4 py-2 text-sm text-slate-100 transition hover:-translate-y-0.5 hover:border-sky-300/35 hover:bg-sky-400/20">미국 팝</a>
+        <a href="uk-pop.html" class="rounded-full border border-sky-300/15 bg-sky-400/10 px-4 py-2 text-sm text-slate-100 transition hover:-translate-y-0.5 hover:border-sky-300/35 hover:bg-sky-400/20">영국 팝</a>
+        <a href="j-pop.html" class="rounded-full border border-sky-300/15 bg-sky-400/10 px-4 py-2 text-sm text-slate-100 transition hover:-translate-y-0.5 hover:border-sky-300/35 hover:bg-sky-400/20">일본 팝</a>
+        <a href="latin-pop.html" class="rounded-full border border-sky-300/15 bg-sky-400/10 px-4 py-2 text-sm text-slate-100 transition hover:-translate-y-0.5 hover:border-sky-300/35 hover:bg-sky-400/20">라틴 팝</a>
 
-<h4>주의! static한 웹사이트만 배포 가능하다.</h4>
+        <div class="ml-0 flex flex-col gap-2 rounded-2xl border border-cyan-300/15 bg-white/5 px-3 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] sm:ml-3">
+          <span class="text-[10px] font-semibold tracking-[0.28em] text-cyan-200/80">GLOBAL POP MENU</span>
+          <div class="flex flex-wrap gap-2">
+            <a href="us-pop.html" class="rounded-full border border-cyan-300/15 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-50 transition hover:-translate-y-0.5 hover:border-cyan-200/35 hover:bg-cyan-300/20">미국 팝</a>
+            <a href="uk-pop.html" class="rounded-full border border-cyan-300/15 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-50 transition hover:-translate-y-0.5 hover:border-cyan-200/35 hover:bg-cyan-300/20">영국 팝</a>
+            <a href="j-pop.html" class="rounded-full border border-cyan-300/15 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-50 transition hover:-translate-y-0.5 hover:border-cyan-200/35 hover:bg-cyan-300/20">일본 팝</a>
+            <a href="latin-pop.html" class="rounded-full border border-cyan-300/15 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-50 transition hover:-translate-y-0.5 hover:border-cyan-200/35 hover:bg-cyan-300/20">라틴 팝</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+      <article class="relative overflow-hidden rounded-[2rem] border border-sky-300/20 bg-slate-900/85 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:p-8">
+        <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-sky-400/20 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-indigo-400/15 blur-3xl"></div>
+
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-medium text-cyan-100">
+          <span class="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_0_6px_rgba(34,211,238,0.12)]"></span>
+          전 세계를 사로잡은 한국 대중음악
+        </div>
+
+        <h1 class="max-w-2xl text-4xl font-black leading-tight tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+          리듬, 퍼포먼스, 스타일이 만난<br />
+          <span class="bg-gradient-to-r from-sky-300 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">K-POP</span>
+        </h1>
+
+        <p class="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
+          K-POP은 음악만이 아니라 춤, 패션, 영상미, 팬 문화가 함께 어우러진 글로벌 엔터테인먼트입니다.
+          세련된 프로덕션과 강렬한 퍼포먼스로 전 세계 팬들에게 새로운 경험을 선사합니다.
+        </p>
+
+        <div class="mt-7 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-[1.5rem] border border-sky-200/20 bg-white/10 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <strong class="block text-2xl font-extrabold text-white">글로벌</strong>
+            <span class="mt-1 block text-sm leading-6 text-slate-300">국경을 넘는 팬덤과 커뮤니티</span>
+          </div>
+          <div class="rounded-[1.5rem] border border-sky-200/20 bg-white/10 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <strong class="block text-2xl font-extrabold text-white">퍼포먼스</strong>
+            <span class="mt-1 block text-sm leading-6 text-slate-300">완성도 높은 안무와 무대 연출</span>
+          </div>
+          <div class="rounded-[1.5rem] border border-sky-200/20 bg-white/10 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <strong class="block text-2xl font-extrabold text-white">창의성</strong>
+            <span class="mt-1 block text-sm leading-6 text-slate-300">독창적인 콘셉트와 비주얼 세계관</span>
+          </div>
+        </div>
+      </article>
+
+      <aside class="grid gap-4">
+        <div class="overflow-hidden rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-5 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10">
+          <div class="overflow-hidden rounded-[1.5rem] border border-sky-200/20 bg-white/10 p-3">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/330px-Flag_of_South_Korea.svg.png"
+              alt="대한민국 국기 태극기"
+              class="h-48 w-full rounded-[1.1rem] object-contain bg-white/95 p-3"
+            />
+          </div>
+          <p class="mt-3 text-xs text-slate-400">
+            이미지 출처: Wikimedia Commons
+          </p>
+        </div>
+
+        <div class="rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10">
+          <h2 class="text-xl font-bold text-white">K-POP의 매력</h2>
+          <p class="mt-3 leading-7 text-slate-300">
+            캐치한 멜로디와 중독성 있는 훅, 강렬한 안무, 팀워크가 돋보이는 군무가 조화를 이루며
+            시청각적인 즐거움을 만들어냅니다.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="rounded-full border border-sky-200/15 bg-sky-300/10 px-3 py-1 text-sm text-sky-100">Music</span>
+            <span class="rounded-full border border-sky-200/15 bg-sky-300/10 px-3 py-1 text-sm text-sky-100">Dance</span>
+            <span class="rounded-full border border-sky-200/15 bg-sky-300/10 px-3 py-1 text-sm text-sky-100">Fashion</span>
+            <span class="rounded-full border border-sky-200/15 bg-sky-300/10 px-3 py-1 text-sm text-sky-100">Fandom</span>
+            <span class="rounded-full border border-sky-200/15 bg-sky-300/10 px-3 py-1 text-sm text-sky-100">Culture</span>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10">
+          <h2 class="text-xl font-bold text-white">한눈에 보기</h2>
+          <p class="mt-3 leading-7 text-slate-300">
+            데뷔 쇼케이스부터 월드 투어까지, K-POP은 스토리와 성장 서사를 함께 공유하며 팬들과 깊게 연결됩니다.
+          </p>
+        </div>
+    </aside>
+    </section>
+
+    <section class="mt-5 rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:p-8">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="text-[11px] font-semibold tracking-[0.35em] text-sky-200/80">RECENT NEWS</p>
+          <h2 class="mt-2 text-2xl font-bold text-white">최근 K-POP 소식</h2>
+        </div>
+        <p class="max-w-2xl text-sm leading-6 text-slate-400">
+          최근 K-POP은 대형 그룹의 귀환, 글로벌 시상식 성과, 세계적 페스티벌 참여로
+          다시 한 번 존재감을 키우고 있습니다.
+        </p>
+      </div>
+
+      <div class="mt-6 grid gap-4 lg:grid-cols-3">
+        <article class="rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-200">2026-03-19 · AP</p>
+          <h3 class="mt-3 text-lg font-semibold text-white">BTS, 서울 광화문에서 귀환 무대</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            완전체 복귀 이후 첫 대형 무대로 주목받으며, 한국적 상징성과 글로벌 팬덤을 함께 보여줬습니다.
+          </p>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-200">2026-02-02 · AP</p>
+          <h3 class="mt-3 text-lg font-semibold text-white">‘Golden’ 그래미 수상으로 K-POP 새 이정표</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            K-pop Demon Hunters의 곡이 수상하며, K-POP의 글로벌 인지도와 대중적 확장성을 다시 확인했습니다.
+          </p>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-200">2026-06-02 · AP</p>
+          <h3 class="mt-3 text-lg font-semibold text-white">BTS, iHeartRadio 페스티벌 라인업 합류</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            장르를 넘나드는 대형 페스티벌 무대에 이름을 올리며 K-POP의 세계 무대 입지를 넓혔습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-5 rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:p-8">
+      <p class="text-[11px] font-semibold tracking-[0.35em] text-sky-200/80">WIKIPEDIA SUMMARY</p>
+      <h2 class="mt-2 text-2xl font-bold text-white">위키백과 문서로 보는 K-POP</h2>
+      <p class="mt-3 max-w-3xl leading-7 text-slate-300">
+        K-POP은 한국 대중음악을 바탕으로 성장한 유행 음악으로, 해외 시장에서의 확장,
+        아이돌 중심의 산업 구조, 뮤직비디오와 군무, 패션과 팬덤 문화가 결합된 복합적 장르로 소개됩니다.
+      </p>
+
+      <div class="mt-6 grid gap-4 lg:grid-cols-4">
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5">
+          <p class="text-xs font-semibold tracking-[0.25em] text-cyan-200">정의</p>
+          <h3 class="mt-2 text-lg font-semibold text-white">대한민국 대중가요</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            위키백과는 K-POP을 한국 대중가요가 세계적으로 통용되는 이름으로 설명합니다.
+          </p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5">
+          <p class="text-xs font-semibold tracking-[0.25em] text-cyan-200">뿌리</p>
+          <h3 class="mt-2 text-lg font-semibold text-white">팝과 장르의 융합</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            팝, 록, 힙합, 알앤비, 전자음악을 결합한 국제화된 음악으로 소개됩니다.
+          </p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5">
+          <p class="text-xs font-semibold tracking-[0.25em] text-cyan-200">산업</p>
+          <h3 class="mt-2 text-lg font-semibold text-white">앨범과 디지털 소비</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            포토카드, 포토북, 디지털 싱글 등 팬 경험을 중심으로 앨범 형식이 진화했습니다.
+          </p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5">
+          <p class="text-xs font-semibold tracking-[0.25em] text-cyan-200">문화</p>
+          <h3 class="mt-2 text-lg font-semibold text-white">팬덤과 챌린지</h3>
+          <p class="mt-2 leading-7 text-slate-300">
+            응원봉, 공식 색, 간식차, 틱톡 챌린지처럼 팬 참여형 문화가 강하게 자리잡았습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="mt-5 rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:p-8">
+      <h2 class="text-2xl font-bold text-white">K-POP이란?</h2>
+      <p class="mt-3 max-w-3xl leading-7 text-slate-300">
+        K-POP은 한국에서 발전한 대중음악 장르로, 다양한 스타일의 음악과 역동적인 퍼포먼스를 결합해
+        독자적인 문화로 자리 잡았습니다.
+      </p>
+
+      <div id="features" class="mt-6 grid gap-4 md:grid-cols-3">
+        <article class="group rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400/35 to-indigo-400/25 text-xl shadow-lg shadow-sky-500/10">🎤</div>
+          <h3 class="mt-4 text-lg font-semibold text-white">음악성</h3>
+          <p class="mt-2 leading-7 text-slate-300">팝, 힙합, R&B, EDM 등 다양한 장르를 융합해 폭넓은 청취 경험을 제공합니다.</p>
+        </article>
+
+        <article class="group rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400/35 to-indigo-400/25 text-xl shadow-lg shadow-sky-500/10">💃</div>
+          <h3 class="mt-4 text-lg font-semibold text-white">퍼포먼스</h3>
+          <p class="mt-2 leading-7 text-slate-300">정교한 안무와 칼군무, 무대 연출이 합쳐져 압도적인 라이브 경험을 만듭니다.</p>
+        </article>
+
+        <article class="group rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400/35 to-indigo-400/25 text-xl shadow-lg shadow-sky-500/10">🌏</div>
+          <h3 class="mt-4 text-lg font-semibold text-white">글로벌 팬덤</h3>
+          <p class="mt-2 leading-7 text-slate-300">언어와 지역을 넘어 팬들이 함께 응원하며 커뮤니티 문화를 만들어갑니다.</p>
+        </article>
+      </div>
+
+      <div class="mt-6 grid gap-4 lg:grid-cols-2">
+        <article class="rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5">
+          <h3 class="text-lg font-semibold text-white">K-POP을 이루는 핵심 요소</h3>
+          <ul class="mt-4 grid gap-3 text-sm leading-7 text-slate-300 sm:grid-cols-2">
+            <li class="rounded-2xl border border-sky-200/15 bg-slate-950/30 px-4 py-3">국제화된 음악과 영어 가사 활용</li>
+            <li class="rounded-2xl border border-sky-200/15 bg-slate-950/30 px-4 py-3">영화처럼 구성된 뮤직비디오</li>
+            <li class="rounded-2xl border border-sky-200/15 bg-slate-950/30 px-4 py-3">포인트 안무와 칼군무</li>
+            <li class="rounded-2xl border border-sky-200/15 bg-slate-950/30 px-4 py-3">패션, 스타일, 브랜드 협업</li>
+            <li class="rounded-2xl border border-sky-200/15 bg-slate-950/30 px-4 py-3">팬클럽, 응원봉, 공식 색</li>
+            <li class="rounded-2xl border border-sky-200/15 bg-slate-950/30 px-4 py-3">장르 유행에 따른 빠른 변화</li>
+          </ul>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-sky-300/20 bg-white/10 p-5">
+          <h3 class="text-lg font-semibold text-white">산업과 팬 경험의 변화</h3>
+          <p class="mt-4 leading-7 text-slate-300">
+            예전에는 CD 중심이었던 앨범이 지금은 포토북, 자켓 앨범, 포토카드처럼
+            소장 가치와 팬 경험을 강조하는 방향으로 바뀌었습니다.
+          </p>
+          <p class="mt-3 leading-7 text-slate-300">
+            여기에 스트리밍, SNS, 챌린지 문화가 더해지면서 K-POP은 음악 소비를 넘어
+            참여형 콘텐츠로 확장되었습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="history" class="mt-5 rounded-[2rem] border border-sky-300/20 bg-slate-900/80 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:p-8">
+      <h2 class="text-2xl font-bold text-white">K-POP의 흐름</h2>
+      <div class="mt-5 grid gap-4">
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <b class="inline-block text-sm font-semibold text-cyan-200">1992</b>
+          <p class="mt-2 leading-7 text-slate-300">서태지와 아이들로 대표되는 출발점에서 새로운 아이돌 문화가 형성됩니다.</p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <b class="inline-block text-sm font-semibold text-cyan-200">2000년대</b>
+          <p class="mt-2 leading-7 text-slate-300">아이돌 그룹이 본격적으로 확대되며 아시아권에서 K-POP 인지도가 커집니다.</p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <b class="inline-block text-sm font-semibold text-cyan-200">2010년대</b>
+          <p class="mt-2 leading-7 text-slate-300">유튜브와 SNS를 통해 뮤직비디오, 안무, 스타일이 글로벌 확산의 핵심이 됩니다.</p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <b class="inline-block text-sm font-semibold text-cyan-200">2020년대</b>
+          <p class="mt-2 leading-7 text-slate-300">영어 중심의 곡, 새로운 장르 시도, 더 넓은 해외 차트 진입이 두드러집니다.</p>
+        </article>
+        <article class="rounded-[1.5rem] border border-sky-300/20 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-sky-300/35 hover:bg-white/12">
+          <b class="inline-block text-sm font-semibold text-cyan-200">최근 과제</b>
+          <p class="mt-2 leading-7 text-slate-300">과도한 경쟁, 짧은 수명, 언어 사용, 산업 구조 변화 같은 논의도 함께 이어집니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-5 rounded-[2rem] border border-amber-300/20 bg-amber-400/10 p-6 shadow-[0_30px_100px_rgba(2,8,23,0.62)] backdrop-blur-3xl ring-1 ring-white/10 sm:p-8">
+      <h2 class="text-2xl font-bold text-white">함께 생각해 볼 점</h2>
+      <div class="mt-4 grid gap-4 md:grid-cols-3">
+        <article class="rounded-[1.5rem] border border-amber-200/20 bg-slate-950/35 p-5">
+          <h3 class="font-semibold text-white">장점</h3>
+          <p class="mt-2 leading-7 text-slate-300">글로벌 연결성, 높은 완성도, 팬 참여형 문화가 강점입니다.</p>
+        </article>
+        <article class="rounded-[1.5rem] border border-amber-200/20 bg-slate-950/35 p-5">
+          <h3 class="font-semibold text-white">논란</h3>
+          <p class="mt-2 leading-7 text-slate-300">짧은 활동 주기, 과도한 경쟁, 외국어 비중에 대한 비판도 있습니다.</p>
+        </article>
+        <article class="rounded-[1.5rem] border border-amber-200/20 bg-slate-950/35 p-5">
+          <h3 class="font-semibold text-white">미래</h3>
+          <p class="mt-2 leading-7 text-slate-300">다양한 장르 실험과 팬 경험 혁신이 앞으로의 방향을 좌우할 가능성이 큽니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="py-6 text-center text-sm text-slate-400">
+      K-POP은 음악을 넘어 하나의 문화입니다.
+      내용은
+      <a class="text-sky-200 underline decoration-sky-300/40 underline-offset-4" href="https://ko.wikipedia.org/wiki/K-pop" target="_blank" rel="noreferrer">
+        위키백과 K-pop 문서
+      </a>
+      를 바탕으로 확장했습니다.
+    </footer>
+  </main>
+</body>
+</html>
